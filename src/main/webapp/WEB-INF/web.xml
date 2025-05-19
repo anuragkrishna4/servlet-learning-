@@ -1,0 +1,155 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+    <param-name>appTitle</param-name>
+    <param-value>My Web App</param-value>
+  </context-param>
+
+  <!--  <servlet>-->
+  <!--    <servlet-name>CreateUserServlet</servlet-name>-->
+  <!--    <servlet-class>com.nisum.CreateUserServlet</servlet-class>-->
+  <!--    &lt;!&ndash;    <init-param>&ndash;&gt;-->
+  <!--    &lt;!&ndash;      <param-name>username</param-name>&ndash;&gt;-->
+  <!--    &lt;!&ndash;      <param-value>admin</param-value>&ndash;&gt;-->
+  <!--    &lt;!&ndash;    </init-param>&ndash;&gt;-->
+  <!--    &lt;!&ndash;    <init-param>&ndash;&gt;-->
+  <!--    &lt;!&ndash;      <param-name>password</param-name>&ndash;&gt;-->
+  <!--    &lt;!&ndash;      <param-value>secret123</param-value>&ndash;&gt;-->
+  <!--    &lt;!&ndash;    </init-param>&ndash;&gt;-->
+  <!--  </servlet>-->
+
+  <!--  <servlet-mapping>-->
+  <!--    <servlet-name>CreateUserServlet</servlet-name>-->
+  <!--    <url-pattern>/create-user</url-pattern>-->
+  <!--  </servlet-mapping>-->
+
+
+  <!-- WelcomeDisplay servlet config -->
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>com.nisum.WelcomeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>InputFormServlet</servlet-name>
+    <servlet-class>com.nisum.InputFormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InputFormServlet</servlet-name>
+    <url-pattern>/input</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>DemoServlet</servlet-name>
+    <servlet-class>com.nisum.DemoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DemoServlet</servlet-name>
+    <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DateTimeServlet</servlet-name>
+    <servlet-class>com.nisum.DateTimeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DateTimeServlet</servlet-name>
+    <url-pattern>/datetime</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>ConfigServlet</servlet-name>
+    <servlet-class>com.nisum.ConfigServlet</servlet-class>
+    <init-param>
+      <param-name>adminName</param-name>
+      <param-value>Anurag Krishna</param-value>
+    </init-param>
+    <init-param>
+      <param-name>adminEmail</param-name>
+      <param-value>admin@example.com</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ConfigServlet</servlet-name>
+    <url-pattern>/config</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>com.nisum.CookieServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.nisum.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogOutServlet</servlet-name>
+    <servlet-class>com.nisum.LogOutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LogOutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <context-param>
+    <param-name>companyName</param-name>
+    <param-value>Acme Corporation</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>supportEmail</param-name>
+    <param-value>support@acme.com</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <servlet-class>com.nisum.ContextParamServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <url-pattern>/contextparams</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <servlet-class>com.nisum.FeedbackServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <url-pattern>/feedback</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
