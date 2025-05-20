@@ -151,5 +151,33 @@
     <url-pattern>/feedback</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>com.nisum.RedirectServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HeaderDisplayServlet</servlet-name>
+    <servlet-class>com.nisum.HeaderDisplayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HeaderDisplayServlet</servlet-name>
+    <url-pattern>/headers</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <servlet-class>com.nisum.ShoppingCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServlet</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>
