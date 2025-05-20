@@ -245,6 +245,15 @@
     <servlet-name>AuthLogoutServlet</servlet-name>
     <url-pattern>/Authlogout</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.nisum.StudentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/student</url-pattern>
+  </servlet-mapping>
 
 
 </web-app>
