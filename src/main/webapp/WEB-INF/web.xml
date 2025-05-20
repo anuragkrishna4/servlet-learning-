@@ -179,5 +179,23 @@
     <url-pattern>/cart</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>SetSessionServlet</servlet-name>
+    <servlet-class>com.nisum.SetSessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetSessionServlet</servlet-name>
+    <url-pattern>/setsession</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ReadSessionServlet</servlet-name>
+    <servlet-class>com.nisum.ReadSessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadSessionServlet</servlet-name>
+    <url-pattern>/readsession</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>
