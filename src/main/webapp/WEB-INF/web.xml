@@ -256,4 +256,59 @@
   </servlet-mapping>
 
 
+    <servlet>
+      <servlet-name>PersonalDetailsServlet</servlet-name>
+      <servlet-class>com.nisum.PersonalDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>PersonalDetailsServlet</servlet-name>
+      <url-pattern>/personal</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>ContactDetailsServlet</servlet-name>
+      <servlet-class>com.nisum.ContactDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>ContactDetailsServlet</servlet-name>
+      <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+      <servlet-name>SummaryServlet</servlet-name>
+      <servlet-class>com.nisum.SummaryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>SummaryServlet</servlet-name>
+      <url-pattern>/summary</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.nisum.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.nisum.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ValidationServlet</servlet-name>
+    <servlet-class>com.nisum.ValidationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ValidationServlet</servlet-name>
+    <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
