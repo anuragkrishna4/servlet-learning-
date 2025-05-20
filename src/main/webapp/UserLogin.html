@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+</head>
+<body>
+<h2>User Login Page</h2>
+<form method="post" action="login">
+    Username: <input type="text" name="username" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Login">
+</form>
+
+<!-- Display error if login fails -->
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('error')) {
+        document.write("<p style='color:red;'>Invalid credentials. Please try again.</p>");
+    }
+</script>
+</body>
+</html>

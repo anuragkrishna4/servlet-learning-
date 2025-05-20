@@ -197,5 +197,54 @@
     <url-pattern>/readsession</url-pattern>
   </servlet-mapping>
 
+  <filter>
+    <filter-name>RequestLoggingFilter</filter-name>
+    <filter-class>com.nisum.RequestLoggingFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>RequestLoggingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <display-name>Feedback Application</display-name>
+
+  <servlet>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>com.nisum.CommentServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/comments</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AuthLoginServlet</servlet-name>
+    <servlet-class>com.nisum.AuthLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthLoginServlet</servlet-name>
+    <url-pattern>/Authlogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AuthDashboardServlet</servlet-name>
+    <servlet-class>com.nisum.AuthDashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthDashboardServlet</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AuthLogoutServlet</servlet-name>
+    <servlet-class>com.nisum.AuthLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthLogoutServlet</servlet-name>
+    <url-pattern>/Authlogout</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>
